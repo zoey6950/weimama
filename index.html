@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="花加美café／韋媽媽餡餅">
+    <meta property="og:url" content="https://TESTWEB220610.surge.sh">
+    <meta property="og:image" content="./img/og-img.png">
+    <meta property="og:description" content="咖啡．輕食．台式點心">
+    <title>花加美café／韋媽媽餡餅</title>
+    <link rel="shortcut icon" href="./img/icon (2).png">
+    <!-- 客製化Bootstrap CSS -->
+    <link rel="stylesheet" href="./scss/bootstrap.css">
+    <!-- 使用font awesome 圖示套件 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img class="navbar-img" src="./img/logo.png" alt="LOGO">
+        </a>
+        <div class="navbar-list">
+            <a class="navbar-link" href="#top">最新消息</a>
+            <a class="navbar-link" href="#aboutUs">關於我們</a>
+            <a class="navbar-link" href="#menu">菜單</a>
+            <a class="navbar-link" href="#contact">連結</a>
+        </div>
+        <button class="navbar-toggier">
+            <div class="line"></div>
+        </button>
+    </nav>
+
+    <div id="top" class="announcement">
+        <!-- 輪播圖片 -->
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="carousel-img" src="./img/carousel_1.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./img/carousel_2.JPG" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./img/carousel-3.jpg" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- 輪播圖片 end -->
+        <!-- <img class="schedule" src="./img/2022-06-08.jpg" alt="6月休"> -->
+    </div>
+
+    <section id="aboutUs">
+        <h2 class="text-center">關於我們</h2>
+    </section>
+
+    <div class="about-img">
+        <p class="about-img-p">「吃不該只是進食，<br>
+            　　而是喚醒身心的感受。」</p>
+    </div>
+
+    <div class="about">
+        <p>如<span>薄雪草</span>般跨越高山之寒，即使困難，也堅持天然手做。<br>
+            希望溫暖的餐食，能讓疲累的味蕾，帶領我們重溫人生之美。</p>
+
+        <p>手工現做餡餅起家於2008年，<br>
+            為秉持相同精神，提供多樣選擇，<br>
+            於2021年創立「花加美」。<br>
+            感謝每位在艱難時刻支持韋媽媽及花加美的顧客，<br>
+            因為有大家，我們才能繼續堅持初衷。
+        </p>
+    </div>
+
+    <section id="menu">
+        <h2 class="text-center">菜單</h2>
+    </section>
+
+    <nav class="nav nav-pills justify-content-center">
+        <a data-toggle="tab" class="btn-outline-primary nav-link active" href="#mainMeal">主餐料理</a>
+        <a data-toggle="tab" class="btn-outline-primary nav-link" href="#pasta">義大利麵</a>
+        <a data-toggle="tab" class="btn-outline-primary nav-link" href="#salad">田園沙拉</a>
+        <a data-toggle="tab" class="btn-outline-primary nav-link" href="#lightMeal">品品輕食</a>
+        <a data-toggle="tab" class="btn-outline-primary nav-link" href="#dessert">療癒甜點</a>
+        <a data-toggle="tab" class="btn-outline-primary nav-link" href="#drinks">來杯飲品</a>
+        <a data-toggle="tab" class="btn-outline-primary nav-link" href="#weimama">招牌韋媽媽</a>
+    </nav>
+
+    <div class="tab-content">
+        <section id="mainMeal" class="tab-pane active">
+            <h3 class="text-center pt-3">主餐料理</h3>
+            <div class="intro-line bg-primary"></div>
+            <div class="description">
+                <p>10:30後供應<br>
+                    小菜選擇：煎蛋捲／韓式泡菜<br>
+                    附餐選擇：湯／紅茶／熱美式<br>
+                    （冰美式+10元，或其他飲品折抵30元）</p>
+            </div>
+            <div class="meal-list">
+                <div class="meal">
+                    <img class="meal-img" src="./img/mainMeal_1.png" alt="">
+                    <h5>醬燒牛/豬飯</h5>
+                    <p class="price">$158</p>
+                    <p>獨家醬燒肉片、現炒蔬菜。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="">
+                    <h5>蔬食滿分菇菇飯</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$198</p>
+                    <p>滿滿蔬菜多元菇。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/mainMeal_3.jpg" alt="">
+                    <h5>舒肥義式雞胸飯</h5>
+                    <p class="price">$198</p>
+                    <p>健康均衡設計：<br>
+                        150g雞胸肉+150g炒蔬菜+1碗飯。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="">
+                    <h5>舒肥香煎豬里肌飯</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$218</p>
+                    <p>健康均衡設計：<br>
+                        150g豬里肌+150g炒蔬菜+1碗飯。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/mainMeal_5.png" alt="">
+                    <h5>真大海海鮮飯</h5>
+                    <p class="price">$238</p>
+                    <p>透抽、鮮蝦、蚵仔、豬肉片、五蔬。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/mainMeal_6.png" alt="">
+                    <h5>真大海海鮮湯麵</h5>
+                    <p class="price">$238</p>
+                    <p>透抽、鮮蝦、蚵仔、豬肉片、五蔬。</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="pasta" class="tab-pane">
+            <h3 class="text-center pt-3">義大利麵</h3>
+            <div class="intro-line bg-primary"></div>
+            <div class="description">
+                <p>10:30後供應<br>
+                    麵條選擇：直麵／筆管麵<br>
+                    醬汁選擇：濃郁白醬／清新綠醬／番茄肉醬<br>
+                    +60元升級焗烤</p>
+            </div>
+            <div class="meal-list">
+                <div class="meal">
+                    <img class="meal-img" src="./img/pasta_1-1.png" alt="">
+                    <h5>經典義大利麵</h5>
+                    <p class="price">$98</p>
+                    <p>經典義大利麵醬+蔬菜。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="">
+                    <h5>菇菇滿開義大利麵</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$158</p>
+                    <p>精選多種類菇菇。 <br>
+                        ◆蛋奶五辛素者，可選綠醬或白醬 <br>
+                        ◆蛋奶素者，可選清炒蒜香 <br>
+                        ◆五辛素者，可選綠醬或清炒蒜香</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/pasta_3-1.png" alt="">
+                    <h5>海鮮義大利麵</h5>
+                    <p class="price">$198</p>
+                    <p>整隻透抽、鮮蝦、蛤蜊。</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="salad" class="tab-pane">
+            <h3 class="text-center pt-3">田園沙拉</h3>
+            <div class="intro-line bg-primary"></div>
+            <div class="meal-list">
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="貝比沙拉">
+                    <h5>貝比沙拉</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$128</p>
+                    <p>新鮮生菜沙拉、堅果。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/salad_3.png" alt="貝比舒肥義式雞胸沙拉">
+                    <h5>貝比舒肥義式雞胸沙拉</h5>
+                    <p class="price">$158</p>
+                    <p>新鮮生菜沙拉、堅果、雞胸肉。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="貝比舒肥香煎豬里肌沙拉">
+                    <h5>貝比舒肥香煎豬里肌沙拉</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$178</p>
+                    <p>新鮮生菜沙拉、堅果、豬里肌。</p>
+                </div>
+
+            </div>
+            <h4 class="text-center pt-3">沙拉套餐</h4>
+            <div class="description pt-5">
+                <p>麵包選擇：山形吐司／軟法<br>
+                    附餐選擇：紅茶／熱美式<br>
+                    （冰美式+10元，或其他飲品折抵30元）</p>
+            </div>
+            <div class="meal-list">
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="元氣滿滿素偶套餐">
+                    <h5>元氣滿滿素偶套餐</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$198</p>
+                    <p>新鮮生菜沙拉、堅果、歐姆蛋、三種菇菇。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/saladSet_2.png" alt="元氣滿滿加肉套餐">
+                    <h5>元氣滿滿加肉套餐</h5>
+                    <p>（雞胸肉／豬里肌 ）</p>
+                    <p class="price">$198</p>
+                    <p>新鮮生菜沙拉、堅果、歐姆蛋、<br>
+                        雞胸肉／豬里肌。</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="lightMeal" class="tab-pane">
+            <h3 class="text-center pt-3">品品輕食</h3>
+            <div class="intro-line bg-primary"></div>
+            <div class="meal-list">
+                <div class="meal">
+                    <img class="meal-img" src="./img/lightMeal_1.png" alt="">
+                    <h5>海鮮蔥餅比薩</h5>
+                    <p class="price">$128</p>
+                    <p>獨家中西混搭。含透抽、蝦仁、<br>
+                        雙起司、蟹味棒、番茄。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/lightMeal_3.jpg" alt="">
+                    <h5>醬燒牛／豬堡</h5>
+                    <p class="price">$88</p>
+                    <p>獨家醬燒肉片、生菜、洋蔥、番茄。</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="dessert" class="tab-pane">
+            <h3 class="text-center pt-3">療癒甜點</h3>
+            <div class="intro-line bg-primary"></div>
+            <p class="text-center">每日限量供應</p>
+            <div class="meal-list">
+                <div class="meal">
+                    <img class="meal-img" src="./img/dessert_1.png" alt="">
+                    <h5>雞蛋鮮奶布丁</h5>
+                    <p class="price">$60</p>
+                    <p>選用德國香草籽醬取代香精，<br>
+                        無加水。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/493/800/600" alt="">
+                    <h5>伯爵茶布丁</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$75</p>
+                    <p>選用德國香草籽醬取代香精，<br>
+                        濃郁茶香，無加水。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/493/800/600" alt="">
+                    <h5>鮮奶奶酪</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$60</p>
+                    <p>濃郁鮮奶，無加水。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/dessert_4.png" alt="">
+                    <h5>季節水果鮮奶奶酪</h5>
+                    <p class="price">$75</p>
+                    <p>限時限量，選用季節水果。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/493/800/600" alt="">
+                    <h5>自家烘焙蛋糕</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$90</p>
+                    <p>每日限量供應。</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="drinks" class="tab-pane">
+            <h3 class="text-center pt-3">來杯飲品</h3>
+            <div class="intro-line bg-primary"></div>
+            <div class="meal-list">
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/1060/800/600" alt="">
+                    <h5>精選紅茶</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$60</p>
+                    <p>含糖量約22g。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/drinks_2.png" alt="">
+                    <h5>濃醇鮮奶茶</h5>
+                    <p class="price">$75</p>
+                    <p>含糖量約18g。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/1060/800/600" alt="">
+                    <h5>美式咖啡</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">H $60／I $70</p>
+                    <p>曼巴／榛果可可。<br>
+                        無加糖，可附糖球。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/drinks_4.png" alt="">
+                    <h5>拿鐵咖啡</h5>
+                    <p class="price">$75</p>
+                    <p>曼巴／榛果可可。<br>
+                        無加糖，可附糖球。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/1060/800/600" alt="">
+                    <h5>氣泡水</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$60</p>
+                    <p>無糖</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/drinks_6.jpg" alt="">
+                    <h5>青梅風味氣泡水</h5>
+                    <p class="price">$75</p>
+                    <p>含糖量約13g。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/drinks_7.jpg" alt="">
+                    <h5>蜜桃風味氣泡水</h5>
+                    <p class="price">$75</p>
+                    <p>含糖量約13g。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/drinks_8.jpg" alt="">
+                    <h5>覆盆子風味氣泡水</h5>
+                    <p class="price">$75</p>
+                    <p>含糖量約13g。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/1060/800/600" alt="">
+                    <h5>現打果汁</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$時價</p>
+                    <p>水果種類依當日店內供應為準。</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="weimama" class="tab-pane">
+            <h3 class="text-center pt-3">招牌韋媽媽</h3>
+            <div class="intro-line bg-primary"></div>
+            <div class="meal-list">
+                <div class="meal">
+                    <img class="meal-img" src="./img/weimama_1.png" alt="">
+                    <h5>蔥蛋包</h5>
+                    <p class="price">$40</p>
+                    <p>蔥、整顆蛋、起司、蟹味棒。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/weimama_2.png" alt="">
+                    <h5>豬肉餡餅</h5>
+                    <p class="price">$40</p>
+                    <p>多汁豬肉。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/weimama_3.png" alt="">
+                    <h5>蔥餅</h5>
+                    <p class="price">$35</p>
+                    <p>捲捲螺旋造型蔥餅。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/weimama_4.png" alt="">
+                    <h5>蘿蔔絲餅</h5>
+                    <p class="price">$35</p>
+                    <p>10:30後供應</p>
+                    <p>新鮮蘿蔔刨絲、蝦米、蔥。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/weimama_5.png" alt="">
+                    <h5>韭菜盒</h5>
+                    <p class="price">$35</p>
+                    <p>10:30後供應</p>
+                    <p>韭菜、雞蛋、蝦米。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/weimama_6.JPG" alt="">
+                    <h5>古早味肉粽</h5>
+                    <p class="price">$65</p>
+                    <p>10:30後供應</p>
+                    <p>北部粽。<br>
+                        豬肉、鹹蛋黃、香菇、菜脯。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="">
+                    <h5>小籠包</h5>
+                    <p class="price">$60</p>
+                    <p class="todo">沒有圖片</p>
+                    <p>一籠6顆、豬肉。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="">
+                    <h5>古早味燒賣</h5>
+                    <p class="price">$100</p>
+                    <p class="todo">沒有圖片</p>
+                    <p>一籠6顆、豬肉、鯊魚漿。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="./img/weimama_9.jpg" alt="">
+                    <h5>古早味蝦仁燒賣</h5>
+                    <p class="price">$150</p>
+                    <p>一籠6顆、豬肉、鯊魚漿、蝦仁。</p>
+                </div>
+
+                <div class="meal">
+                    <img class="meal-img" src="https://picsum.photos/id/488/800/600" alt="">
+                    <h5>半半雙響</h5>
+                    <p class="todo">沒有圖片</p>
+                    <p class="price">$80</p>
+                    <p>3顆小籠包+3顆原味燒賣。</p>
+                </div>
+
+        </section>
+
+    </div>
+
+    <section id="contact">
+        <h2 class="text-center">連結</h2>
+    </section>
+
+    <section id="location">
+        <div class="wrapper">
+            <div class="location-info">
+                <h3 class="sub-title">花加美café</h3>
+                <p>
+                    地址：台北市中山區松江路330巷9號1樓 <br>
+                    　　　(捷運行天宮站4號出口步行約3分鐘)<br>
+                    營業時間：09:00~20:00 <br>
+                    電話：02-2562-1098 <br>
+
+                    E-mail：weimamaspie2008@gmail.com
+                </p>
+                <a class="facebook-icon" href="https://www.facebook.com/Weimamaspie/">
+                    <i class="icon-facebook fa-brands fa-facebook-square"></i>
+                </a>
+                <a class="line-icon" href="https://page.line.me/232atips">
+                    <i class="icon-line fa-brands fa-line"></i>
+                </a>
+
+            </div>
+            <!-- google map -->
+            <div class="location-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14456.803109727261!2d121.5323194!3d25.0611832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa4924bffd65a8bd!2z6Iqx5Yqg576OY2Fmw6kgJiDpn4vlqr3lqr3ppKHppIUo5Y6f6Yym5bee6KGX6JSl6JuL5YyFKQ!5e0!3m2!1szh-TW!2stw!4v1654782991557!5m2!1szh-TW!2stw"
+                    width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- google map end -->
+        </div>
+    </section>
+
+    <button id="goBackBtn">
+        <i class="fas fa-solid fa-circle-chevron-up"></i>
+    </button>
+
+    <footer class="text-white">
+        <div class="footer-end bg-dark mt-3 py-2">
+            <p class="text-center">&copy; 2022 weimamaspie</p>
+        </div>
+    </footer>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
