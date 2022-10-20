@@ -131,6 +131,7 @@ body {
 
 /* announcement */
 
+
 .carousel-inner {
     height: 500px;
     position: relative;
@@ -165,6 +166,24 @@ body {
 
 /* aboutUs */
 
+section {
+    opacity: .5;
+    transition: all .3s ease;
+}
+
+section.is-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#section1 {
+    opacity: 1;
+}
+
+.tab-pane {
+    opacity: 1;
+}
+
 .about-img {
     display: block;
     width: 950px;
@@ -177,12 +196,18 @@ body {
 .about-img-p {
     font-size: x-large;
     background-color: white;
-    opacity: .7;
+    opacity: 0;
     font-weight: bolder;
     position: absolute;
     margin: auto auto;
-    left: 30px;
+    left: -30px;
     bottom: 15px;
+    transition: all .7s ease-in;
+}
+
+.about-img-p.is-active {
+    opacity: .7;
+    left: 30px;
 }
 
 .about p {
